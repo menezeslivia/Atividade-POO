@@ -2,14 +2,14 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Candidato candidato = new Candidato(null, 11070, 0);
+        Candidato candidato = new Candidato("", 000, 0);
         
-        Scanner nome = new Scanner (System.in);
+        Scanner scan = new Scanner (System.in);
         System.out.println("Digite o nome: ");  
-        candidato.setNome(nome.nextLine());
+        candidato.setNome(scan.nextLine());
 
         System.out.println("Digite o numero: ");  
-        candidato.setNumero(nome.nextInt());
+        candidato.setNumero(scan.nextInt());
 
         System.out.println(candidato.getNome()
         + " - " + candidato.getNumero());
